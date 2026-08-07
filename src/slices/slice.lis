@@ -1,0 +1,12 @@
+pub fn last<T>(slice: Slice<T>) -> Option<T> {
+  let len = slice.length()
+  if len == 0 { return None }
+  slice.get(len - 1)
+}
+
+pub fn not_in<T: Comparable>(value: T, options: Slice<T>) -> bool {
+  for opt in options {
+    if value == opt { return false }
+  }
+  true
+}

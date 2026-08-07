@@ -1,0 +1,27 @@
+import "go:strings"
+
+pub fn after(text: string, last: string) -> string {
+  if let Some(idx) = strings.Index(text, last) {
+    return text.substring(idx + last.length()..)
+  }
+  text
+}
+
+pub fn before(text: string, last: string) -> string {
+  if let Some(idx) = strings.Index(text, last) { return text.substring(..idx) }
+  text
+}
+
+pub fn before_last(text: string, last: string) -> string {
+  if let Some(idx) = strings.LastIndex(text, last) {
+    return text.substring(..idx)
+  }
+  text
+}
+
+pub fn after_last(text: string, last: string) -> string {
+  if let Some(idx) = strings.LastIndex(text, last) {
+    return text.substring(idx + last.length()..)
+  }
+  text
+}
