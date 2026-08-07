@@ -1,2 +1,2 @@
 slices/slice.go	8f4de5b3aadefa7f	github.com/ivov/lisette/prelude
-strings/string.go	fc30f7939fc824a9	github.com/ivov/lisette/prelude,strings
+strings/strings.go	fc30f7939fc824a9	github.com/ivov/lisette/prelude,strings
